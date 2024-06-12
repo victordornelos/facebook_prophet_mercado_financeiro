@@ -88,6 +88,7 @@ figura.update_layout(
 figura.show()
 ```
 ```python
+# Biblioteca necessária
 from statsmodels.tsa.seasonal import seasonal_decompose
 
 # Gerando de composição da série
@@ -203,4 +204,10 @@ def teste_erro(serie,previsao):
 teste_erro(df,prev['yhat'])
 ```
 ## 5. Resultados
+Os resultados da análise exploratória mostram que, durante o ano de 2022, houve uma grande queda devido à baixa no mercado de criptoativos, com uma estabilização desde o início de 2023 até o final de outubro. Posteriormente, observa-se uma tendência de alta até o momento atual. Além disso, não foi detectada nenhuma sazonalidade expressiva durante esse período.\
+Quanto ao modelo, conforme pode ser visto no gráfico, o algoritmo conseguiu captar as movimentações do mercado de forma geral. No entanto, ocorreram alguns casos de superestimação, especialmente durante os primeiros trimestres de cada ano.
+
+![Grafico](/Users/victor/Desktop/modelos_preditivos_acoes_python/output.png)
+
+Com base nas métricas de erro, verifica-se que o algoritmo conseguiu prever as cotações do ETF HASH11 de forma bastante satisfatória. Isso é evidenciado principalmente pelo baixo MSD, que tem mais peso para os erros de maiores magnitudes. Em outras palavras, o modelo apresentou poucas previsões significativamente distantes das observações reais.
 
