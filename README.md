@@ -12,9 +12,10 @@
 ## Sumário
 1. [Descrição](https://github.com/victordornelos/Serie_temporal_previdencia_social?tab=readme-ov-file#1-descrição)
 2. [Objetivo](https://github.com/victordornelos/Serie_temporal_previdencia_social?tab=readme-ov-file#2-objetivo)
-3. [Metodologia](https://github.com/victordornelos/Serie_temporal_previdencia_social?tab=readme-ov-file#3-metodologia)
-4. [Resultados](https://github.com/victordornelos/Serie_temporal_previdencia_social?tab=readme-ov-file#4-resultados)
-5. [Referências](https://github.com/victordornelos/Serie_temporal_previdencia_social?tab=readme-ov-file#5-referências)
+3. [Algoritmo do Facebook Prophet](https://github.com/victordornelos/Serie_temporal_previdencia_social?tab=readme-ov-file#3-metodologia)
+4. [Metodologia](https://github.com/victordornelos/Serie_temporal_previdencia_social?tab=readme-ov-file#3-metodologia)
+5. [Resultados](https://github.com/victordornelos/Serie_temporal_previdencia_social?tab=readme-ov-file#4-resultados)
+6. [Referências](https://github.com/victordornelos/Serie_temporal_previdencia_social?tab=readme-ov-file#5-referências)
 
 ## 1. Descrição
 
@@ -211,3 +212,15 @@ Quanto ao modelo, conforme pode ser visto no gráfico, o algoritmo conseguiu cap
 
 Com base nas métricas de erro, verifica-se que o algoritmo conseguiu prever as cotações do ETF HASH11 de forma bastante satisfatória. Isso é evidenciado principalmente pelo baixo MSD, que tem mais peso para os erros de maiores magnitudes. Em outras palavras, o modelo apresentou poucas previsões significativamente distantes das observações reais.
 
+Os resultados das métricas calculadas são apresentados na tabela abaixo:
+```markdown
+| Metric | Value    |
+|--------|----------|
+| MAD    | 1.683501 |
+| MAPE   | 0.060987 |
+| MSD    | 4.891084 |
+```
+# 6. Referências
+
+TAYLOR, S. J.; LETHAM, B. Forecasting at Scale. PeerJ Preprints, v. 3190, p. 1-19, 2017. Disponível em: https://doi.org/10.7287/peerj.preprints.3190v2. Acesso em: 12 jun. 2024.\
+SCHWARZ, Jones. Python para finanças: análise de dados e machine learning [curso online]. Udemy, 2021. Disponível em: https://www.udemy.com/course/python-para-financas-analise-de-dados-e-machine-learning/. Acesso em: 12 jun. 2024.
